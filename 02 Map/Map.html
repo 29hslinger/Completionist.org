@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Completion List - Map</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url("https://objmap.zeldamods.org/game_files/maptex/base.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border: 1.5px solid #75c7c5;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #ffd372;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../01 Overview/Overview.html">Overview</a>
+  <a href="../02 Map/Map.html">Map</a>
+  <a href="../03 Map-Related/Map-Related.html">Map-Related</a>
+  <a href="../04 Quest’s & Memories/Quest’s & Memories.html">Quest's & Memories</a>
+  <a href="../05 Upgrades/Upgrades.html">Upgrades</a>
+  <a href="../06 Item’s & Collections/Item’s & Collections.html">Item's & Collections</a>
+  <a href="../07 Farming & Vendor’s/Farming & Vendor’s.html">Farming & Vendor's</a>
+  <a href="../08 Bestiary/Bestiary.html">Bestiary</a>
+  <a href="../09 Extra's/Extra's.html">Extras</a>
+  <a href="../10 DLC/DLC.html">DLC</a>
+</div>
+<span style="font-size:30px;cursor:pointer; color: #75c7c5;" onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>
